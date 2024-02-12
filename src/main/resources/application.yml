@@ -1,0 +1,25 @@
+cloud:
+  aws:
+    credentials:
+      access-key: ASIAT3B6VUTMUQU4BN75
+      secret-key: ReDPJOAh9AfjnMraZWpPGE2JZFbMm1GYTpbLzI5B
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: aws-bucket-nitin
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+server:
+  port: 9090
